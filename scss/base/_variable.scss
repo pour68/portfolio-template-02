@@ -1,0 +1,39 @@
+:root {
+    /*
+      Blue: hsl(207, 90%, 61%)
+      Purple: hsl(250, 66%, 75%)
+      Pink: hsl(356, 66%, 75%)
+      Teal: hsl(174, 63%, 62%)
+    */
+
+    --hue: 250;
+    --sat: 66%;
+    --lig: 75%;
+    --first-color: hsl(var(--hue), var(--sat), var(--lig));
+    --first-color-alt: hsl(var(--hue), var(--sat), 57%);
+    /* -4% */
+    --title-color: hsl(var(--hue), 12%, 15%);
+    --text-color: hsl(var(--hue), 12%, 45%);
+    --text-color-light: hsl(var(--hue), 8%, 75%);
+    --text-color-lighten: hsl(var(--hue), 8%, 92%);
+    --body-color: hsl(var(--hue), 100%, 99%);
+    --container-color: #fff;
+
+    /*.5rem = 8px | 1rem = 16px ...*/
+    --body-font: 'Poppins', sans-serif;
+    --fs-xl: 1.25rem;
+    --fs-lg: 1rem;
+    --fs-md: 0.938rem;
+    --fs-sm: 0.813rem;
+    --fs-xs: 0.75rem;
+}
+
+@media screen and (min-width: 968px) {
+    :root {
+        --fs-xl: 1.5rem;
+        --fs-lg: 1.25rem;
+        --fs-md: 1rem;
+        --fs-sm: 0.875rem;
+        --fs-xs: 0.813rem;
+    }
+}
